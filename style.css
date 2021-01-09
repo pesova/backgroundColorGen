@@ -1,0 +1,75 @@
+body {
+    font: 'Raleway', sans-serif;
+    color: rgba(0, 0, 0, .5);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    top: 15%;
+    background: linear-gradient(to right, rgb(255, 255, 255), yellow);
+}
+
+h1 {
+    font: 600 3.5em 'Raleway', sans-serif;
+    color: rgba(0, 0, 0, .5);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    width: 100%;
+}
+
+h3 {
+    font: 600 3.5em 'Raleway', sans-serif;
+    color: rgba(0, 0, 0, .5);
+    text-align: center;
+    text-transform: none;
+    letter-spacing: .5em;
+}
+
+footer {
+    padding: 40px 0 0 0;
+}
+
+footer>p {
+    font-weight: bolder;
+    font-style: italic;
+    letter-spacing: .3em;
+}
+
+@keyframes example {
+    0% {
+        color: rgba(0, 0, 0, .5);
+        letter-spacing: .3em;
+    }
+    25% {
+        color: yellow;
+        letter-spacing: .6em;
+        transform: rotateX(360deg);
+    }
+    50% {
+        color: blue;
+        letter-spacing: .9em;
+    }
+    65% {
+        color: rgb(131, 133, 131);
+        letter-spacing: .12em;
+    }
+    75% {
+        color: rgb(206, 24, 0);
+        letter-spacing: .15em;
+        text-shadow: 2px 2px 4px #000000;
+    }
+    85% {
+        color: rgb(117, 17, 112);
+        letter-spacing: .18em;
+    }
+    100% {
+        color: rgb(0, 0, 0);
+        letter-spacing: .21em;
+    }
+}
+
+footer>p {
+    animation-name: example;
+    animation-duration: 30s;
+    animation-iteration-count: 3;
+}
